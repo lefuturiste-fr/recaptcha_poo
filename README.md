@@ -2,13 +2,13 @@
 Use this class for have use Google recaptcha api.
 Use this class for your MVC architecture.
 
-###Instalation
+##Instalation
 
 1. Download this class.
 
-###Usage
+##Usage
 
-###### A - Server Instalation
+### A - Server Instalation
 1. Require this class.
 2. Initialise class
 ```php
@@ -37,7 +37,7 @@ Use this class for your MVC architecture.
   }
   ?>
 ```
-###### B - Client Instalation
+### B - Client Instalation
 1. Include script's file :
 ```html
   <script type="text/javascript" src="https://cdn.stail.eu/jquery/jquery.min.js"></script>

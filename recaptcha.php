@@ -1,6 +1,7 @@
 <?php
-/*Class recaptcha*/
-/*A COMMENTER*/
+/*
+*	Use a recaptcha api
+*/
 class recaptcha{
 
 	private $public;
@@ -14,7 +15,16 @@ class recaptcha{
     public function __construct($public, $secret) {
 		$this->public = $public;
 		$this->secret = $secret;		
-	}	
+	}
+
+	/**
+	* Get html element.
+	* @param $dataTheme 
+	* @return string
+	*/
+	public function getHtml($dataTheme = 'light'){
+		return '<div class="g-recaptcha" data-sitekey="'.$this->public.'" data-theme="'.$dataTheme.'"></div>';
+	}
 
 	/*
 	IsSuccess = vérifier une clé post envoyé par google
